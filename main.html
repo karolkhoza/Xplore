@@ -53,12 +53,84 @@
 			}); 
 		</script>
 <!--//pop-up-box -->
+<script type="text/javascript" src="ping.v1.0.2.js"></script>
 
+<style>
+	iframe#chatWrapper_container_chat_bot {
+		transition:0.4s;
+		
+	}
+	
+	iframe#chatWrapper_container_chat_bot.show {
+		height: 529px;
+		width: 367px;
+		position: fixed;
+		bottom: 18px;
+		right: 7px;
+		border: none;
+		border-radius: 4px;
+		box-shadow: 0px 3px 4px 0px #9E9E9E;
+		z-index: 9999;
+	}
+	iframe#chatWrapper_container_chat_bot {
+		height: 529px;
+		width: 367px;
+		position: fixed;
+		bottom: -600px;
+		right: 7px;
+		border: none;
+		border-radius: 4px;
+		box-shadow: 0px 3px 4px 0px #9E9E9E;
+	}
+	
+	div.chatWrapper_container_chat_bot_wrapper button.chatWrapper_container_chat_bot_cancelButton{
+		position: fixed;
+		bottom: -600px;
+		right: 15px;
+		z-index: 99999;
+		background-color: transparent;
+		border: none;
+		cursor:pointer;
+	}
+	
+	div.chatWrapper_container_chat_bot_wrapper button.chatWrapper_container_chat_bot_cancelButton.show{
+		transition:0.4s;
+		position: fixed;
+		bottom: 504px;
+		right: 15px;
+		z-index: 9999;
+		background-color: transparent;
+		border: none;
+		}
+		
+	div.chatWrapper_container_chat_bot_wrapper button.floatButton{
+		background: none;
+		border: none;
+		cursor: pointer;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index:99;
+	}
+	div.chatWrapper_container_chat_bot_wrapper button.floatButton img{
+			width: 70px;
+		}
+	</style> 
     </head>
 <body>
+	<div>Test</div>
+
+	<script type="text/javascript" data-config-key="tewquyteyqwte2321321gghhghghsdvbns" data-config-param1="200"
+	 src="ping.v1.0.2.js"
+	 data-heading = "Sample Header Test"
+	 data-welcomeText = "Hello.. I am Knadia..I am here to assist and answer your queries.">
+		
+		
+	
+	</script>
 <div class="body-back">
 	<div class="masthead pdng-stn1">
-		><!--<div id="menu" class="panel" role="navigation">
+		<!--<div id="menu" class="panel" role="navigation">
 			<div class="wrap-content">
 				<div class="profile-menu text-center">
 					<img class="border-effect" src="images/logo.png" alt=" ">
@@ -80,9 +152,9 @@
 		</div>-->
 		<div class="phone-box wrap push" id="home">
 			<div class="menu-notify">
-				<div class="profile-left">
+				<!--<div class="profile-left">
 					<a href="#menu" class="menu-link"><i class="fa fa-list-ul"></i></a>
-				</div>
+				</div>-->
 				<div class="Profile-mid">
 					<h5 class="pro-link"><a href="main.html">Xplore</a></h5>
 				</div>
@@ -92,7 +164,7 @@
 					<div id="small-dialog" class="mfp-hide">
 						<div class="login-modal"> 	
 							<div class="booking-info">
-							   <h3><a href="main.html">X<span>p</span>l<span>o</span>r<span>e</span>t</a></h3>
+							   <h3><a href="main.html">X<span>p</span>l<span>o</span>r<span>e</a></h3>
 								
 							</div>
 							<div class="login-form">
@@ -188,7 +260,7 @@
 			</script>
 
 	<div id="container">
-			<h1>QR Code Scanner</h1>
+			<h4>QR Code Scanner</h4>
 		
 			<a id="btn-scan-qr">
 				<img src="https://uploads.sitepoint.com/wp-content/uploads/2017/07/1499401426qr_icon.svg">
