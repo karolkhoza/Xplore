@@ -9,6 +9,7 @@
 <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <meta charset utf="8">
 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
     <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
     type="text/javascript" charset="utf-8"></script>
     <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
@@ -52,15 +53,16 @@
 			}); 
 		</script>
 <!--//pop-up-box -->
+
     </head>
 <body>
 <div class="body-back">
 	<div class="masthead pdng-stn1">
-		<div id="menu" class="panel" role="navigation">
+		><!--<div id="menu" class="panel" role="navigation">
 			<div class="wrap-content">
 				<div class="profile-menu text-center">
 					<img class="border-effect" src="images/logo.png" alt=" ">
-						<h3>My Account</h3>
+						<h3>Menu</h3>
 
 						<div class="pro-menu">
 							<div class="logo">
@@ -75,7 +77,7 @@
 						</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<div class="phone-box wrap push" id="home">
 			<div class="menu-notify">
 				<div class="profile-left">
@@ -150,17 +152,17 @@
 				<div class="details-shade">
 						<div class="details-right">
 							<img src="images/logo.png" alt=" ">
-							<h3>Welcome To</h3>
-							<h4>You’re going to like us.</h4>
+							<h1>Hi, Zoey</h1>
+							<h4>Congratualtions you've collected 100 points today!!</h4>
 								
 							
 						</div>
-						<div class="banner_search">
+						<!--<div class="banner_search">
 								<form action="#" method="post">
 									<input type="search" name="search" value="Where to go ?" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Where to go ?';}" required="">
 									<input type="submit" value=" ">
 								</form>
-						</div> 
+						</div> -->
 
 				
 				</div>
@@ -184,6 +186,25 @@
 				  center: { lng: 28.0473, lat: -26.2041 }
 				});
 			</script>
+
+	<div id="container">
+			<h1>QR Code Scanner</h1>
+		
+			<a id="btn-scan-qr">
+				<img src="https://uploads.sitepoint.com/wp-content/uploads/2017/07/1499401426qr_icon.svg">
+			</a>
+		
+			<canvas hidden="" id="qr-canvas"></canvas>
+		
+			<div id="qr-result" hidden="">
+				<b>Data:</b> <span id="outputData"></span>
+			</div>
+		</div>
+		
+		<script src="./src/qrCodeScanner.js"></script>
+		<script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js">
+		</script>
+
    <!-- //banner -->
    <!--/welcome-->
 	<!--	        <div class="w3agile welcome"> 
